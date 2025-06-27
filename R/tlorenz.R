@@ -40,7 +40,6 @@ tlorenz <- function(q, d1 , group , d2 , newwts="newwts") {
 
   x1 <- Lorenz.curve(
     y = d1[[group]],
-    graph = FALSE,
     na.rm = TRUE,
     ties.method = c("mean", "random"),
     seed = NULL,
@@ -49,7 +48,6 @@ tlorenz <- function(q, d1 , group , d2 , newwts="newwts") {
 
   x2 <- Lorenz.curve(
     y = d2[[group]],
-    graph = FALSE,
     na.rm = TRUE,
     ties.method = c("mean", "random"),
     seed = NULL,
